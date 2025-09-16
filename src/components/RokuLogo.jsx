@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 export default function RokuLogo(props) {
-  const { scene } = useGLTF('/models/3d_logoroku/Roku Logo.gltf'); 
+  const { scene } = useGLTF('/models/3d_logoroku/roku_logo.gltf'); 
   const logoRef = useRef();
 
   const currentOpacity = props.opacity !== undefined ? props.opacity : 1;
@@ -64,4 +64,4 @@ export default function RokuLogo(props) {
   );
 }
 
-useGLTF.preload('/models/3d_logoroku/Roku Logo.gltf');
+useGLTF.preload('/models/3d_logoroku/roku_logo.gltf');
